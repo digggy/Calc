@@ -1,0 +1,64 @@
+CLS
+SCREEN 12
+OPEN "F:\qbasics\text\add.txt" FOR APPEND AS #1
+w$ = "y"
+DO WHILE w$ = "y"
+    LINE (20 + 15, 10)-(10, 455), 4, BF
+    LINE (10, 10)-(625, 10), 4, BF
+    LINE (20, 455)-(625, 455), 4, BF
+    LINE (625 + 15, 10)-(625, 455), 4, BF
+    REM "PICTURE BOX"
+    LINE (330 + 100, 70)-(330 + 100, 290 - 30),
+    LINE (330 + 100, 70)-(485 + 100, 70),
+    LINE (330 + 100, 290 - 30)-(485 + 100, 290 - 30),
+    LINE (485 + 100, 70)-(485 + 100, 290 - 30)
+    LOCATE 3, 9
+    PRINT "ADD A BOOK ?????"
+    LOCATE 5, 9
+    PRINT "INPUT THE FOLLOWING INFORMATION"
+
+    LOCATE 10, 12
+    INPUT "BOOK'S NAME : "; a$
+    SOUND 2000, 0.2
+    SOUND 2000, 0.3
+    SOUND 3000, 0.4
+    LOCATE 12, 12
+    INPUT "BOOK'S AUTHOR : "; b$
+    SOUND 2000, 0.2
+    SOUND 2000, 0.3
+    SOUND 3000, 0.4
+
+    LOCATE 14, 12
+    INPUT "BOOK'S GENRES : "; c$
+    SOUND 2000, 0.2
+    SOUND 2000, 0.3
+    SOUND 3000, 0.4
+
+    LOCATE 16, 12
+    INPUT "BOOK PUBLISHED DATE:"; d$
+    SOUND 2000, 0.2
+    SOUND 2000, 0.3
+    SOUND 3000, 0.4
+
+    LOCATE 18, 12
+    INPUT "BOOK DESCRIPTION "; e$
+    SOUND 2000, 0.2
+    SOUND 2000, 0.3
+    SOUND 3000, 0.4
+
+    f$ = "r"
+    WRITE #1, a$, b$, c$, d$, e$, f$
+    FOR I = 1 TO 10000 * 3
+        LOCATE 26, 12
+        PRINT "BOOK ADDED"
+    NEXT I
+    LOCATE 26, 6
+    INPUT "DO YOU WANT TO ADD MORE BOOKS (Y/N)"; f$
+    IF f$ = "y" OR f$ = "Y" THEN
+        w$ = "y"
+    ELSE
+        CHAIN "F:\qbasics\qb64\menu.bas"
+    END IF
+LOOP
+
+

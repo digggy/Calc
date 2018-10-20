@@ -1,0 +1,24 @@
+SCREEN 12
+RANDOMIZE TIMER
+LINE (95, 145)-(550, 150), 4, BF
+LINE (95, 145)-(100, 200), 4, BF
+LINE (95, 205)-(550, 200), 4, BF
+LINE (545, 145)-(550, 200), 4, BF
+
+FOR i = 101 TO 545
+    IF J > 6 THEN
+        J = 0
+        LOCATE 14, 48
+        PRINT "                   "
+    END IF
+    LOCATE 14, 39
+    PRINT "LOADING.."
+    LOCATE 14, 48 + J
+    PRINT "."
+    J = J + 1
+
+    LINE (i, 150)-(i, 200)
+    a = INT(RND * 1000000)
+    FOR b = 1 TO a
+    NEXT b
+NEXT i

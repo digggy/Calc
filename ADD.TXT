@@ -1,0 +1,8 @@
+"digdarshan","kunwar","thiller","2014","it is a good book","b"
+"sudarshan","kunwar","action","2100","nice book","b"
+"nilkil","vaidaya","slow","1","very long book","r"
+"ujwal","naral","comedy","194","very funny","b"
+"amrit","babu","comedy","2011","charlie","b"
+"anish","uprety","gandhi","20111","indian","b"
+"aayush","chaudary","dull","7028","no fun","b"
+"harry potter","j.k.rowlling","fiction","2004","it is a very good book for children.","r"

@@ -1,0 +1,2 @@
+"digdarshan","yogeshwor","7071","10","male","baluwatar","digdarshan"
+"Tulsi","BNKS1234","001","35","Male","Garkyo","Tulsi"
